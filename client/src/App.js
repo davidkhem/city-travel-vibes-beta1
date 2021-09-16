@@ -4,6 +4,8 @@ import AboutUsScreen from "./screens/AboutUsScreen";
 import LoginScreen from "./screens/LoginScreen";
 import DashboardScreen from "./screens/DashboardScreen";
 import UploadScreen from "./screens/UploadScreen";
+import DetailScreen from "./screens/DetailScreen";
+import FavoritesScreen from "./screens/FavoritesScreen";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
             <Route exact path="/login" component={LoginScreen}/>
             <Route exact path="/dashboard" component={DashboardScreen}/>
             <Route exact path="/upload" component={UploadScreen}/>
+            <Route exact path="/favorites" component={FavoritesScreen}/>
+            <Route exact path="/detail" component={DetailScreen}/>
 
         </Switch>
     </div>

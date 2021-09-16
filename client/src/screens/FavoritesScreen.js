@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
-import images from "../images/bhupendra-singh.jpg";
 import Header from "../components/Header";
+import logo5 from "../images/spencer-selover.jpg";
 
-function DetailScreen() {
+function FavoritesScreen() {
     return (
 
         <div className="flex flex-col items-center bg-black">
@@ -12,15 +12,21 @@ function DetailScreen() {
 
             <div className=" bg-white rounded flex items-center w-64 p-3 shadow-sm border border-gray-200">
                 <input type="search" name="" id="" placeholder="search images" className="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent"/>
-                    <div>
-                        <select className="text-sm outline-none focus:outline-none bg-transparent">
-                            <option value="all" selected>All</option>
-                            <option value="building">Photo</option>
-                            <option value="statue">Illustration</option>
-                            <option value="nature">Vector</option>
-                        </select>
-                    </div>
+                <div>
+                    <select className="text-sm outline-none focus:outline-none bg-transparent">
+                        <option value="all" selected>All</option>
+                        <option value="building">Building</option>
+                        <option value="statue">Statue</option>
+                        <option value="nature">Nature</option>
+                    </select>
+                </div>
             </div>
+
+
+
+            <img src={logo5} className="bg-cover w-full h-96" alt="logo5"/>
+
+
 
             <div className="flex justify-center p-2 my-6 text-white">
                 <Link to="/dashboard">Explore</Link>
@@ -31,4 +37,4 @@ function DetailScreen() {
     )
 }
 
-export default DetailScreen;
+export default FavoritesScreen;

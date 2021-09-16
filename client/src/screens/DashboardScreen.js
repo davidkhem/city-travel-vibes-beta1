@@ -1,8 +1,8 @@
 import {useRef} from "react";
-// import {Link} from "react-router-dom";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import {Link} from "react-router-dom";
 
 function DashboardScreen() {
     const input = useRef();
@@ -31,6 +31,9 @@ function DashboardScreen() {
                     <h1 className="pb-5">Results:</h1>
                         <div className="w-full h-96 bg-gray-600 p-4">
                             {/*<Result/>*/}
+                            <div className="flex justify-center p-2 my-6 text-white">
+                                <Link to="/detail">Detail</Link>
+                            </div>
                         </div>
                 </div>
 
