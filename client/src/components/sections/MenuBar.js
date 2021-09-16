@@ -4,7 +4,7 @@ const MenuBar = () => {
     return (
         <div className="flex justify-between text-white w-full bg-black">
 
-                <Link to="/add">Add</Link>
+                <Link to="/upload">Upload</Link>
 
                 <Link to="/favorites">Favorites</Link>
 
