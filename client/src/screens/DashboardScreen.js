@@ -3,7 +3,8 @@ import {useRef} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 //import {Link} from "react-router-dom";
-import ResultList from "../components/sections/ResultList";
+//import ResultList from "../components/sections/ResultList";
+import LocationList from "../components/sections/LocationList";
 
 function DashboardScreen() {
     const input = useRef();
@@ -31,7 +32,12 @@ function DashboardScreen() {
                 <div className="flex flex-col w-full p-2 my-8 text-white">
                     <div className="flex flex-col w-full bg-gray-600 p-4">
                         <h1 className="pb-5">Results:</h1>
-                          <ResultList/>
+
+                          {/*<ResultList/>*/}
+                        <LocationList/>
+
+
+
                     </div>
                 </div>
 

@@ -23,17 +23,6 @@ export default function ResultList() {
 
     }, [])
 
-    // const results = [
-    //     {
-    //         id: 1, name: 'Fenway Park', image: 'http://dummyimage.com/108x100.png/cc0000/ffffff', detail: 'Lorem10',
-    //     }, {
-    //         id: 2, name: 'The Garden', image: 'http://dummyimage.com/108x100.png/cc0000/ffffff', detail: 'Lorem10',
-    //     }, {
-    //         id: 3, name: 'MoFA', image: 'http://dummyimage.com/108x100.png/cc0000/ffffff', detail: 'Lorem10',
-    //     }, {
-    //         id: 4, name: 'Copley', image: 'http://dummyimage.com/108x100.png/cc0000/ffffff', detail: 'Lorem10',
-    //     }
-    // ]
 
     return (
         <>

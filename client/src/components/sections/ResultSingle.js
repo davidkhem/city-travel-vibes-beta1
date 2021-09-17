@@ -8,6 +8,7 @@ export default function ResultSingle(result) {
 
             <img src={result.image} alt=''/>
             <h2>{result.name}</h2>
+            <p>{result.content}</p>
 
         </div>
     )
