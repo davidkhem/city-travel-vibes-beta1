@@ -6,6 +6,8 @@ import DashboardScreen from "./screens/DashboardScreen";
 import UploadScreen from "./screens/UploadScreen";
 import DetailScreen from "./screens/DetailScreen";
 import FavoritesScreen from "./screens/FavoritesScreen";
+import ResultList from "./components/sections/ResultList";
+import ResultSingle from "./components/sections/ResultSingle";
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
             <Route exact path="/upload" component={UploadScreen}/>
             <Route exact path="/favorites" component={FavoritesScreen}/>
             <Route exact path="/detail" component={DetailScreen}/>
+
+            <Route exact path="/results" component={ResultList}/>
+            <Route exact path="/results/:id" component={ResultSingle}/>
+
 
         </Switch>
     </div>

@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import images from "../images/bhupendra-singh.jpg";
+//import images from "../images/bhupendra-singh.jpg";
 import Header from "../components/Header";
 
 function DetailScreen() {

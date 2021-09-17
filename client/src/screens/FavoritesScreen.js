@@ -8,7 +8,7 @@ function FavoritesScreen() {
         <div className="flex flex-col items-center bg-black">
 
             <Header/>
-            <h1 className="text-white pb-5">Detail</h1>
+            <h1 className="text-white pb-5">My Favorites</h1>
 
             <div className=" bg-white rounded flex items-center w-64 p-3 shadow-sm border border-gray-200">
                 <input type="search" name="" id="" placeholder="search images" className="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent"/>

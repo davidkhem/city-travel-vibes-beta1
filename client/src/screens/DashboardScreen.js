@@ -2,7 +2,8 @@ import {useRef} from "react";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import {Link} from "react-router-dom";
+//import {Link} from "react-router-dom";
+import ResultList from "../components/sections/ResultList";
 
 function DashboardScreen() {
     const input = useRef();
@@ -28,13 +29,10 @@ function DashboardScreen() {
                 </div>
 
                 <div className="flex flex-col w-full p-2 my-8 text-white">
-                    <h1 className="pb-5">Results:</h1>
-                        <div className="w-full h-96 bg-gray-600 p-4">
-                            {/*<Result/>*/}
-                            <div className="flex justify-center p-2 my-6 text-white">
-                                <Link to="/detail">Detail</Link>
-                            </div>
-                        </div>
+                    <div className="flex flex-col w-full bg-gray-600 p-4">
+                        <h1 className="pb-5">Results:</h1>
+                          <ResultList/>
+                    </div>
                 </div>
 
                 <Footer/>
