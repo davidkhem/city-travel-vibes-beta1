@@ -14,6 +14,8 @@ import Chinatown from "./components/sections/Descriptions/Chinatown";
 import BostonCommon from "./components/sections/Descriptions/BostonCommon";
 import NorthEnd from "./components/sections/Descriptions/NorthEnd";
 import QuincyMarket from "./components/sections/Descriptions/QuincyMarket";
+import BostonResults from "./screens/BostonResults";
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
             <Route exact path="/upload" component={UploadScreen}/>
             <Route exact path="/favorites" component={FavoritesScreen}/>
 
+            <Route exact path="/bostonresults" component={BostonResults}/>
 
             <Route exact path="/location/fenway" component={LocationList}/>
             <Route exact path="/fenway" component={FenwayPark}/>
