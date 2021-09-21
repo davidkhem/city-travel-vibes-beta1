@@ -1,5 +1,5 @@
-import ResultSingle from "../components/sections/ResultSingle";
-import supabase from "../supabase";
+import ResultSingle from "../sections/locations/ResultSingle";
+import supabase from "../../supabase";
 import {useEffect, useState} from "react";
 
 export default function DetailScreen() {

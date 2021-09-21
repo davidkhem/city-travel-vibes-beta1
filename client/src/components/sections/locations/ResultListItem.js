@@ -4,7 +4,7 @@ export default function ResultListItem({result}) {
 
     return (
             <div className="flex gap-2 p-2">
-                <div className='w-20 h-20'>
+                <div className='w-full h-full'>
                     <img src={result.image} alt='pix'/>
                 </div>
                 <div className="pl-5">

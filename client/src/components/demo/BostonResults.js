@@ -1,11 +1,9 @@
-import {Link} from "react-router-dom";
-
 import {useRef} from "react";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 
-import LocationList from "../components/sections/LocationList";
+import DemoList from "../demo/DemoList";
 
 function BostonResults() {
     const input = useRef();
@@ -34,9 +32,7 @@ function BostonResults() {
                     <div className="flex flex-col w-full bg-gray-600 p-4">
                         <h1 className="pb-5">Results:</h1>
 
-                        <LocationList/>
-
-
+                        <DemoList/>
 
                     </div>
                 </div>

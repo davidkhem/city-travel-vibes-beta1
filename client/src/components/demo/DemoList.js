@@ -4,7 +4,7 @@ import logo7 from "../../images/north-end.jpg";
 import logo8 from "../../images/chinatown.jpg";
 import logo9 from "../../images/quincy-market.jpg";
 import logo10 from "../../images/boston-common.jpeg";
-export default function LocationList() {
+export default function DemoList() {
 
     return (
         <>

@@ -4,17 +4,22 @@ import AboutUsScreen from "./screens/AboutUsScreen";
 import LoginScreen from "./screens/LoginScreen";
 import DashboardScreen from "./screens/DashboardScreen";
 import UploadScreen from "./screens/UploadScreen";
-import DetailScreen from "./screens/DetailScreen";
 import FavoritesScreen from "./screens/FavoritesScreen";
-import ResultList from "./components/sections/ResultList";
-import ResultSingle from "./components/sections/ResultSingle";
-import LocationList from "./components/sections/LocationList";
-import FenwayPark from "./components/sections/Descriptions/FenwayPark";
-import Chinatown from "./components/sections/Descriptions/Chinatown";
-import BostonCommon from "./components/sections/Descriptions/BostonCommon";
-import NorthEnd from "./components/sections/Descriptions/NorthEnd";
-import QuincyMarket from "./components/sections/Descriptions/QuincyMarket";
-import BostonResults from "./screens/BostonResults";
+import ResultList from "./components/sections/locations/ResultList";
+import ResultSingle from "./components/sections/locations/ResultSingle";
+
+
+
+//used on demo day
+import DetailScreen from "./components/demo/DetailScreen";
+import DemoList from "./components/demo/DemoList";
+import BostonResults from "./components/demo/BostonResults";
+import FenwayPark from "./components/demo/Descriptions/FenwayPark";
+import Chinatown from "./components/demo/Descriptions/Chinatown";
+import BostonCommon from "./components/demo/Descriptions/BostonCommon";
+import NorthEnd from "./components/demo/Descriptions/NorthEnd";
+import QuincyMarket from "./components/demo/Descriptions/QuincyMarket";
+
 
 
 function App() {
@@ -28,20 +33,20 @@ function App() {
             <Route exact path="/upload" component={UploadScreen}/>
             <Route exact path="/favorites" component={FavoritesScreen}/>
 
-            <Route exact path="/bostonresults" component={BostonResults}/>
 
-            <Route exact path="/location/fenway" component={LocationList}/>
+            <Route exact path="/results" component={ResultList}/>
+            <Route exact path="/results/:id" component={ResultSingle}/>
+            <Route exact path="/detail" component={DetailScreen}/>
+
+
+//used on demo day
+            <Route exact path="/demo" component={DemoList}/>
+            <Route exact path="/bostonresults" component={BostonResults}/>
             <Route exact path="/fenway" component={FenwayPark}/>
             <Route exact path="/chinatown" component={Chinatown}/>
             <Route exact path="/northend" component={NorthEnd}/>
             <Route exact path="/quincymarket" component={QuincyMarket}/>
             <Route exact path="/bostoncommon" component={BostonCommon}/>
-
-
-
-            <Route exact path="/results" component={ResultList}/>
-            <Route exact path="/results/:id" component={ResultSingle}/>
-            <Route exact path="/detail" component={DetailScreen}/>
 
         </Switch>
     </div>
