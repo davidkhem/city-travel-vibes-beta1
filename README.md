@@ -54,7 +54,6 @@ I create a User Journey that will help me imagine in my head the way the app wil
 ## Resources
 * [Tailwind CSS Documentations](https://tailwindcss.com/docs)
 * [MDN Web Docs](https://developer.mozilla.org/en-US/)
-* [Similar Web](https://www.similarweb.com/)
 
 ## Contributor
 * David Khem [GitHub: davidkhem](https://github.com/davidkhem)
